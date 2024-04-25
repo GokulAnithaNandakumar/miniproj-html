@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Starview - Register</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+    
+<header>
+    <nav id="navbar">
+        <div id="logo-div">
+            <a href="index.htm">STARVIEW</a>
+        </div>
+        <div id="nav-links-div">
+            <ul id="nav-links">
+                <li><a href="index.htm" class="nav-link"><i class="fa fa-home"></i></a></li>
+                <li><a href="course.htm" class="nav-link">Course</a></li>
+                <li><a href="test.htm" class="nav-link">Test</a></li>
+                <li><a href="feedback.htm" class="nav-link">Feedback</a></li>
+                <li><a href="login.htm" class="nav-link">Login</a></li>
+                <li><a href="signup.htm" class="nav-link">Signup</a></li>
+                <li><a href="register.htm" class="nav-link">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="register-form-div">
+    <div id="form-header">
+        <h1>Login</h1>
+    </div>
+    <form method="post" id="loginForm" onsubmit="return validate(event)">
+        <div class="form-container">
+            <div class="form-top">
+                <div class="form-col">
+                    <div class="form-row">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-row" id="forgot-pwd">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" id="register-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>  
+<script src="login.js"></script>
+</body>
+
+</html>

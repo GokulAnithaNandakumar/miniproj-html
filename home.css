@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Foldit&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url("images/background7.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    background-color: rgb(0, 0, 0);
+    background-blend-mode:darken;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::selection {
+    background-color: rgb(239, 239, 239);
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 10px 20px 20px 10px;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+
+    transition: 0.2s ease;
+}
+
+#nav-links-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 10px;
+}
+
+#navbar #logo-div h1 {
+    font-family: 'Foldit', cursive;
+    font-size: 1.7rem;
+    margin: 0px 0px 0px 0px;
+}
+
+#nav-links-div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#nav-links-div ul li {
+    margin: 0px 8px;
+}
+
+#nav-links-div ul li a {
+    color: rgba(255, 255, 255, 0.922);
+    font-size: 1.0rem;
+    margin: 0px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 550;
+}
+#nav-links-div ul li a:hover {
+    color: rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}
+
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+    min-height: 100vh;
+}
+
+#hero-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 48%;
+    margin-left: 6rem;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 62%;
+}
+
+#hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+    margin: 0px 5% 0px 10%;
+}
+
+#hero-text h1 {
+    font-family: 'Foldit', cursive;
+    font-size: 7rem;
+    margin: 10px 0px 5px 0px;
+}
+
+/* make above element unselectable */
+#hero-text h1::selection {
+    background-color: transparent;  
+    color: rgba(255, 255, 255, 0.922);
+}
+
+#hero-text h2 {
+    color: rgba(237, 237, 237, 0.922);
+    font-family: 'Rubik Doodle Shadow', cursive;
+    font-size: 2.5rem;
+    margin: 0px 0px 5px 0px;
+}
+
+#hero-text h3 {
+    color: rgba(237, 237, 237, 0.922);
+    margin: 20px 0px 0px 0px;
+}
+
+#hero-text #intro-para {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+#get-started-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0px 50px 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 1;
+}
+
+#get-started-div-part-a {
+    width: 34%;
+}
+
+#get-started-div-part-b {
+    width: 66%;
+}
+
+
+.get-started-btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.922);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0px 0px;
+}
+
+.get-started-btn-div p{
+    font-family: 'Rubik Doodle Shadow', cursive;
+    margin: 0px 0px;
+}
+
+.get-started-btn-div:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.922);
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.923);
+    border-radius: 10px;
+}
+
+.get-started-btn-div:hover p{
+    color: black;
+    font-weight:900;
+}
+
+.get-started-btn {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.921);
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    min-height: 110vh;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#schedule h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.1rem;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+#schedule-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 0px 50px 0px;
+    width: 100%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#schedule-btn-div-text {
+    font-size: 1rem;
+    margin: 1px 0px;
+}
+
+#schedule-table {
+    /* table style */
+    border-collapse: collapse;
+    border-radius: 20px;
+    width: 80%;
+    margin: 40px 0px 50px 0px;
+    
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    
+    /* table header style */
+    background-color: none;
+}
+
+table, th, td {
+    padding: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#schedule-table td button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: "Rubik Doodle Shadow", cursive;
+    cursor: pointer;
+}
+
+#button-td {
+    background-color: #00000000;
+    padding: 0px!important;
+}
+
+#button-td:hover {
+    background-color: rgb(201, 201, 201);
+    color: black;
+    cursor: pointer;
+}
+
+#button-td:hover button {
+    background-color: rgb(201, 201, 201);
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+}
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    font-size: 1rem;
+    font-family: "Rubik Doodle Shadow", cursive;
+    cursor: pointer;
+    
+    border: 2px solid white;
+    
+    display: none;
+    
+    z-index: 1;
+}
+
+.scroll-to-top-btn a {
+    color: rgba(255, 255, 255, 0.923);
+}
+
+.scroll-to-top-btn:hover {
+    background-color: rgba(255, 255, 255, 0.923);
+    color: black;
+    cursor: pointer;
+}
+
+.scroll-to-top-btn:hover a {
+    color: black;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    
+    min-height: 70vh;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 10px 0px 10px;
+    width: 100%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    width: 80%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 0px 10px 5px 10px;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Foldit', cursive;
+    font-size: 3rem;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+#about-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    width: 80%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+#about-company-text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 0px 10px 0px 0px;
+}
+
+#about-company-links{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width: 772px) {
+
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #nav-links-div ul li {
+        margin: 0px 5px;
+    }
+
+    #landing {
+        flex-direction: column;
+    }
+    
+    #hero-pic {
+        width: 100%;
+        display: none;
+    }
+    
+    #hero {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    #hero-text {
+        margin: 0px 5% 0px 5%;
+    }
+
+    #hero-text h1 {
+        font-size: 4.2rem;
+        color: white;
+    }
+
+    #hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero-text #intro-para {
+        font-size: 0.9rem;
+    }
+    
+    #get-started-div {
+        flex-direction: row;
+    }
+    
+    .get-started-btn-div {
+        margin: 10px 0px;
+    }
+        
+    #get-started-div-part-a {
+        width: 22%;
+    }
+    
+    #get-started-div-part-b {
+        width: 78%;
+    }
+
+    #schedule {
+        margin-top: 60px;
+    }
+
+    #schedule h1 {
+        font-size: 1.8rem;
+    }
+
+    #about-header {
+        margin-top: 60px;
+    }
+
+    #about-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-company{
+        flex-direction: column-reverse;
+    }
+
+    #about-company-text {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+
+    #about-company-links {
+        width: 110%;
+        margin: 0px 0px 10px 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #landing {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    #hero-pic {
+        width: 100%;
+    }
+    
+    #hero {
+        width: 100%;
+    }
+    
+    #hero-text {
+        margin: 0px 5% 0px 5%;
+    }
+    
+    #hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    #hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    #hero-text #intro-para {
+        font-size: 0.95rem;
+    }
+
+    .wide-only {
+        display: none;
+    }
+    
+    #get-started-div {
+        flex-direction: row;
+    }
+    
+    #get-started-btn-div {
+        margin: 10px 0px;
+    }
+    
+    #schedule h1 {
+        font-size: 1.4rem;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    
+    min-height: 20vh;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer #footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px 0px 0px;
+    width: 90%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
